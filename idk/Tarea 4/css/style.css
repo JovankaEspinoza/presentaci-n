@@ -1,0 +1,296 @@
+body {
+    background-color:#ABA8A9;
+}
+
+
+
+h1{
+    font-size: 120px;
+    color: #CBF83E;
+    text-align: center;
+    text-shadow: rgb(228, 239, 222);
+    font-family: 'Garamond', serif;
+    letter-spacing: 6px;
+}
+
+h2{
+    font-size: 80px;
+    color: #ebede7;
+    text-align: center;
+    text-shadow: rgb(228, 239, 222);
+    font-family: "Copperplate", sans-serif;
+    letter-spacing: 6px;
+}
+
+
+
+
+
+.nav-interna {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+}
+   
+
+
+.nav-interna a{
+    color:
+    #D8DFEE;
+    text-decoration: none;
+    font-family:  "Copperplate", sans-serif;
+
+}
+
+.contenedor {
+    display: flex;
+    font-family: 'Garamond', serif;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center; /* Centra horizontalmente el contenido dentro del contenedor */
+}
+
+.contenedor img {
+    height: 20%;
+    width: 15%;
+    box-shadow: 5px 5px 10px  #CBF83E;
+    margin: 20px auto; 
+}
+.Descripcion p {
+    font-family: 'Garamond', serif; 
+    color: #D8DFEE;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-align: justify;
+}
+
+.block p {
+    font-family: 'Garamond', serif;
+    color: #CBF83E;
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline img{
+    height: auto;
+    width: 20%;
+    box-shadow: 5px 5px 10px  #CBF83E;
+    margin: 20px ;
+    
+}
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: hsl(0, 1%, 71%);
+    text-align: center; 
+    box-shadow: 0px 0px 20px #CBF83E;
+}
+
+.contenedor-galeria img {
+    width: calc(25% - 20px); /* Calcula el ancho para crear 4 columnas con espacio entre ellas */
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para la imagen */
+.imagen-click {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+
+.imagen-click.agrandada {
+    transform: scale(1.5);}
+
+.First p{
+    color: #CBF83E;
+    text-align: center;
+    font-family: 'Garamond', serif;
+    letter-spacing: 3px;
+}
+
+.form{
+    background-color:#D8DFEE ;
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    font-family: 'Garamond', serif;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: space-between; /* Distribuye uniformemente los elementos verticalmente */
+    
+}
+    
+    
+
+
+.form input{
+    color: black;
+    border: none;
+    background: transparent;
+    font-family: 'Garamond', serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.form input[type="text"] {
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno al hacer clic */
+    background: transparent; /* Fondo transparente */
+    border-bottom: 2px solid #CBF83E;; /* Agrega un subrayado blanco siempre presente */
+    width: 98%; /* Ocupa todo el ancho del formulario */
+    margin: 0; 
+    font-family: 'Garamond', serif;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+   
+}
+
+
+input input,
+.input textarea {
+    width: 80%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espacio interno para los campos de entrada */
+    border: 1px solid #ccc; /* Borde de los campos de entrada */
+    border-radius: 5px; /* Borde redondeado */
+    
+    
+}
+
+#boton5{
+    padding: 5px;
+    background-color: #CBF83E;
+    color: black;
+    border: none;
+    margin-bottom: 15px;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+h1{
+    font-size: 50px;
+    color: #CBF83E;
+    text-align: center;
+    text-shadow: rgb(228, 239, 222);
+    font-family: 'Garamond', serif;
+    letter-spacing: 6px;
+}
+.nav-interna a{
+    color:
+    #D8DFEE;
+    text-decoration: none;
+    font-family:  "Copperplate", sans-serif;
+    font-size: 10px;
+
+}
+
+h2{
+    font-size: 30px;
+    color: #ebede7;
+    text-align: center;
+    text-shadow: rgb(228, 239, 222);
+    font-family: "Copperplate", sans-serif;
+    letter-spacing: 6px;
+}
+
+.Descripcion p {
+    font-family: 'Garamond', serif; 
+    color: #D8DFEE;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-align: justify;
+}
+
+.block p {
+    font-family: 'Garamond', serif;
+    color: #CBF83E;
+    letter-spacing: 3px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.contenedor-galeria {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        margin: 0 auto; 
+        padding: 10px;
+        background-color: hsl(0, 1%, 71%);
+        text-align: center; 
+        box-shadow: 0px 0px 20px #CBF83E;
+    }
+    
+    .contenedor-galeria img {
+        width: calc(50% - 10px); 
+        margin-bottom: 10px; 
+    }
+    
+    /* Estilos para la imagen */
+    .imagen-click {
+        max-width: 100%;
+        transition: transform 0.3s ease;
+    }
+    
+    
+    .imagen-click.agrandada {
+        transform: scale(1.5);}
+    
+.form{
+            background-color:#D8DFEE ;
+            width: 250px;
+    height: 215px;
+      margin: auto;
+            font-family: 'Garamond', serif;
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente los elementos */
+            justify-content: space-between; /* Distribuye uniformemente los elementos verticalmente */
+            
+        }      
+
+ input input,
+        .input textarea {
+            width: 80%; /* Ocupa todo el ancho del contenedor */
+            padding: 10px; /* Espacio interno para los campos de entrada */
+            border: 1px solid #ccc; /* Borde de los campos de entrada */
+            border-radius: 5px; /* Borde redondeado */
+            margin-left: 10px;
+            
+            
+        }       
+        
+        #boton5{
+            padding: 5px;
+            background-color: #CBF83E;
+            color: black;
+            border: none;
+            margin-bottom: 15px;
+            
+        }    
+}
