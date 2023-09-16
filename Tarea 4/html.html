@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Presentacion</title>
+</head>
+<body >
+    <div class="nav-interna">
+        <a href="#pics">Galeria</a>
+        <a href="#mascotas">Nick&Abel</a>
+        <a class="button" href="form.html">Contactame</a>
+
+        <a href="https://www.uai.cl/">UAI</a>
+        <a href="#conciertos">Conciertos</a>
+        
+   </div>
+
+
+    <script>
+    function Cambiartexto (){
+            var mensajes = [
+"¡Bienvenido!", "Welcome!", "Bienvenue!", "Willkommen!"
+]
+var indice = Math.floor(Math.random()*mensajes.length)
+document.getElementById("mensajeInicial").textContent= mensajes[indice]
+        }
+        setInterval(Cambiartexto, 3000);
+
+
+       
+    function cambiarImagen() {
+
+            var imagenes = [
+            "imagenes/imagen1.jpg",
+            "imagenes/imagen2.jpg",
+            "imagenes/imagen3.jpg"
+        ];
+
+        
+            var imagen = document.getElementById("imagen");
+            // Cambia la fuente de la imagen al siguiente elemento en el array de imágenes
+            indiceimg = Math.floor(Math.random()*imagenes.length)
+            imagen.src = imagenes[indiceimg];
+            Math.floor(Math.random()*imagenes.length)
+        }
+
+     // Función para agrandar o achicar la imagen al hacer clic
+function AgrandarImg(img) {
+    if (img.classList.contains("agrandada")) {
+        img.classList.remove("agrandada");
+    } else {
+        
+        img.classList.add("agrandada");
+    }
+}
+
+ 
+
+</script>
+<Section id= "intereses" class = "Intereses">
+  
+    <h1 id="mensajeInicial">¡Bienvenido!</h1>
+
+    <h2> Mis intereses</h2>
+    <hr>
+    <div id="conciertos" class="contenedor">
+        <div class="Descripcion">
+            <p>Una de las actividades que más disfruto hacer es ir a conciertos, la primera vez que fui a uno fue hace ya hace más de 10 años, a partir de ese momento se volvió una de las cosas que hago junto a mi hermana cada vez que podemos
+
+            </p>
+        </div>
+        <div class="block">
+            <p>Da click sobre la imagen si quieres ver más conciertos</p>
+        </div>
+        <img id="imagen" src="imagenes/imagen1.jpg" alt="Imagen 1" onclick="cambiarImagen()">
+    </div>
+    <div id= "mascotas"class="contenedor">
+        <div class=" inline">
+            <img src="imagenes/abel.jpeg">
+            <img src="imagenes/dogs.jpg">
+            <img src="imagenes/nicky.jpg">
+        </div>
+        <div class="Descripcion">
+            <p>Pasar tiempo con mis mascotas es fundamental en mi día a día, sus nombres son Nick y Abel, son dos perros muy jugetones y amorosos, les encanta estar dentro de la casa. 
+            </p>
+        </div>
+       
+       
+    </div>
+
+
+
+    
+
+
+    
+
+</Section>
+
+<section id="pics" class="GALERIA">
+   <h2> Mi Galeria</h2>
+
+   <div class="contenedor-galeria">
+    <img src="galeria/1.jpeg" alt="Imagen1" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/2.jpeg" alt="Imagen2" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/3.jpeg" alt="Imagen3" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/4.jpeg" alt="Imagen4" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/5.jpeg" alt="Imagen5" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/6.jpeg" alt="Imagen6" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/7.jpeg" alt="Imagen7" class="imagen-click" onclick="AgrandarImg(this)">
+    <img src="galeria/8.jpeg" alt="Imagen8" class="imagen-click" onclick="AgrandarImg(this)">
+
+   
+
+   </div>
+   
+</section>
+
+
+
+
+
+
+</body>
+</html>
